@@ -1,0 +1,9 @@
+dry: 54.5
+
+################################################################################
+wet: 46.0
+
+The following test failed:
+firestations([edge(b,i,26), edge(g,h,14), edge(a,h,27), edge(b,d,52), edge(f,l,70), edge(d,e,17), edge(e,g,51), edge(i,k,28), edge(f,i,31), edge(e,j,20), edge(g,l,6), edge(a,m,77), edge(h,j,54), edge(k,m,8), edge(f,g,74), edge(h,i,53), edge(c,h,19), edge(c,g,37), edge(c,k,72), edge(b,m,66), edge(e,k,47), edge(d,h,76), edge(e,l,3), edge(c,l,69), edge(f,j,39), edge(j,l,18), edge(a,e,42), edge(f,m,12), edge(h,m,64), edge(a,j,0), edge(i,j,33), edge(b,f,4), edge(a,b,30), edge(e,m,73), edge(b,k,67), edge(g,j,62), edge(c,i,43), edge(i,l,22), edge(e,i,63), edge(a,g,13), edge(a,k,75), edge(h,k,55), edge(b,l,25), edge(d,i,21), edge(c,f,34), edge(k,l,46), edge(f,k,61), edge(b,e,58), edge(h,l,35), edge(b,h,71), edge(e,f,11), edge(j,m,41), edge(d,m,15), edge(g,k,36), edge(d,k,2), edge(a,i,50), edge(c,j,65), edge(d,g,23), edge(b,j,48), edge(e,h,56), edge(a,l,7), edge(a,d,32), edge(f,h,60), edge(a,c,57), edge(b,g,44), edge(g,m,5), edge(g,i,68), edge(d,f,59), edge(d,j,9), edge(l,m,45), edge(c,d,24), edge(d,l,49), edge(i,m,10), edge(a,f,29), edge(b,c,1), edge(c,e,40), edge(c,m,16), edge(j,k,38)], Vertices), sort(Vertices, Sorted), write(Sorted)..
+Expected ['[l]'], but got [''] instead.
+Test costs 4 points.

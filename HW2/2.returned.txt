@@ -1,0 +1,7 @@
+Bad signature (or not found) for first. Penalty: 5
+Grade for wet part: 95%
+q1: e. wrong answer -2.0
+q2: c. no answer regarding using the same name -1.0
+q2: b. missing reference of some nameable entities -0.5
+q6: a. incomplete answer -1.0
+Dry score: 45.5

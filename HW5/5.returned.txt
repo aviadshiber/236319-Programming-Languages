@@ -1,0 +1,4 @@
+Failed test tests/ex1_7.sml. Penalty: 4
+Grade for wet part: 96%
+Q7: no output values shown -1.5
+Dry score: 48.5

@@ -1,0 +1,36 @@
+#!/usr/bin/awk -f
+BEGIN{
+FS=",";
+print "program A;";
+print "type";
+print "BCE=integer;";
+print "King= record";
+print"		name:string;";
+print"		startYear:BCE;";
+print"		endYear:BCE;";
+print "end;";
+print"var";
+print "f:file of King;";
+print "kings :array [0..18] of King;";
+print "i:integer;";
+print "BEGIN";
+i=0;
+}
+#awk body
+{
+print "kings["i"].name:=" "'"$3"';";
+print "kings["i"].startYear:=" $1";";
+print "kings["i"].endYear:=" $2";";
+i++;
+}
+END{
+print " (* writing kings to kings.dat file *)";
+print"		Assign(f,'kings.dat');";
+print"		(* opens file for writing *)"
+print"		Rewrite(f);";
+print"		(* write king records *)";
+print"   for i:=0 to 18 do Write(f,kings[i]);";
+print"(* closing file *)";
+print"   Close(f);";
+print"	END.";
+}

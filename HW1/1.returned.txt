@@ -1,0 +1,10 @@
+wet: 100.0
+Dry Feedback:
+=============
+
+q1: no explanation of a PL paradigm  -1.5
+q2: // is illegal in ansi c -0.25
+q2: wrong answer in operators that uses keywords -0.5
+q3: no explanation of paradigm -1.5
+q3: wrong program starting point -0.5
+Dry score: 45.75

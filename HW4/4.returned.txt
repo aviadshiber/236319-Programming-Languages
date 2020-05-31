@@ -1,0 +1,17 @@
+################################################################################
+wet: 95.0
+
+Test [p16.sml] failed.
+Expected ['true'], but got ['false'] instead.
+Test costs 5 points.
+
+Dry Feedback:
+=============
+
+Q1 & Q2: missing counter increments in some functions  -2.0
+Q1 & Q2: wrong cond counter -6.0
+Q8: Bonus 4.0
+Kings Bonus 20.0
+Dry score: 66.0
+NOTE that the wet grade is out of 100 but only counts as 50 percent while the dry grade is out of 50
+FINAL GRADE - wet_grade*0.5 + dry_grade + (late? -5 : 0) 

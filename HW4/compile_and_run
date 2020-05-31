@@ -1,0 +1,48 @@
+#!/bin/bash
+cat kings | ./readAndCreateAInPascal  > A.pas
+fpc A.pas
+./A
+rm A.o
+#rm A
+fpc B.pas
+./B > output
+echo "after reading from A" >>output
+rm B.o
+cat readAndCreateAInPascal | sed -re 's/name/othername/g' | sed -re 's/startYear/otherStartYear/g' | sed -re 's/endYear/otherEndYear/g' > readAndCreateCInPascal
+chmod 777 readAndCreateCInPascal
+cat kings | ./readAndCreateCInPascal > C.pas
+fpc C.pas
+./C
+./B >> output 2>errors.C
+echo "after reading from C" >>output
+
+rm C.o
+#rm C
+#building D
+#singlequote=\047
+cat readAndCreateAInPascal | sed -re 's/BCE=integer;/BCE=integer; crowneChoice=(rebellion,inheritance);/g' | sed -re 's/endYear:BCE;/endYear:BCE; kingBy:crowneChoice;/g' | sed '23 a print "if kings["i"].name=" "\\047"$4"\\047" "  then";' | sed '24 a print "  kings["i"].kingBy:=rebellion";'| sed '25 a print "else";' | sed  '26 a print "  kings["i"].kingBy:=inheritance;";' > readAndCreateDInPascal
+chmod 777 readAndCreateDInPascal
+cat kings | ./readAndCreateDInPascal > D.pas
+fpc D.pas
+./D
+./B >> output 2>errors.D
+echo "after reading from D" >>output
+rm D.o
+#rm D
+
+cat readAndCreateDInPascal | sed -re 's/name:string;/name:string;father:string;/g' > readAndCreateEInPascal
+chmod 777 readAndCreateEInPascal
+cat kings | ./readAndCreateEInPascal > E.pas
+fpc E.pas
+./E
+#clear
+./B >>output 2>errors.E
+echo "after reading from E" >>output
+echo "-----------------All programs output-----------------"
+cat output
+echo "------------------all programs errors-------------------"
+cat errors.*
+rm E.o
+echo "------------------------Done----------------------------"
+#rm E
+#rm B

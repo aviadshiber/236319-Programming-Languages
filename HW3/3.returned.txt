@@ -1,0 +1,9 @@
+Dry feedback:
+Q1: Bonus: very detailed answer 1.0
+Q3: inaccurate answer -1.0
+Dry score: 50
+################################################################################
+
+dry: 50.0
+
+wet: 50.0
